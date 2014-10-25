@@ -1,0 +1,17 @@
+# Ignore RubyMine project files
+.idea
+
+*.gem
+*.rbc
+.bundle
+.config
+.yardoc
+Gemfile*.lock
+InstalledFiles
+_yardoc
+coverage
+doc/
+lib/bundler/man
+pkg
+tmp
+.rvmrc
