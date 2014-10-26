@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Translator srt files}
   spec.description   = ''
   spec.homepage      = ''
-  spec.license       = 'MIT'
+  spec.license       = 'New BSD'
 
   spec.files         = `git ls-files`.split($/)
   spec.require_paths = ['lib']
