@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['im@demetrodon.com']
   spec.summary       = %q{Translator srt files}
   spec.description   = ''
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/demetrodon/translator-srt'
   spec.license       = 'New BSD'
 
   spec.files         = `git ls-files`.split($/)
