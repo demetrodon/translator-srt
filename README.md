@@ -27,7 +27,7 @@ For use you need to connect the necessary translation service.
 require 'translator_srt/google_translate'
 
 # Translate from srt string
-translated_srt = TranslatorSrt::GoogleTranslate.translate_srt_file("en", "uk", srt_content)
+translated_srt = TranslatorSrt::GoogleTranslate.translate_srt_string("en", "uk", srt_content)
 
 # Translate from srt file
 translated_srt = TranslatorSrt::GoogleTranslate.translate_srt_file("en", "uk", "/path/some.srt")
