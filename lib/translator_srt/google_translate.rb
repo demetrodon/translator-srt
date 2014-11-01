@@ -7,14 +7,15 @@ module TranslatorSrt
       srt_file_content = File.read(path_srt_file)
       result = Service.new.translate(from_lang, to_lang, srt_file_content)
 
-      puts "Translated srt string"
+      puts "Translate the subtitles string through the google translate is done"
 
       ResultParser.new(result).to_s
     end
+
     def self.translate_srt_string(from_lang, to_lang, text)
       result = Service.new.translate(from_lang, to_lang, text)
 
-      puts "Translated srt string"
+      puts "Translate the subtitles file through the google translate is done"
 
       ResultParser.new(result).to_s
     end

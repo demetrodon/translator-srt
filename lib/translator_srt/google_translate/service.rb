@@ -28,7 +28,7 @@ module TranslatorSrt
         "https://#{GOOGLE_TRANSLATE_SERVICE_URL}/translate_a/single?client=t&sl=#{from_lang}&tl=#{to_lang}&hl=en&dt=bd&dt=ex&dt=ld&dt=md&dt=qc&dt=rw&dt=rm&dt=ss&dt=t&dt=at&dt=sw&ie=UTF-8&oe=UTF-8&prev=btn&rom=1&ssel=0&tsel=0"
       end
 
-      def call_translate_service from_lang, to_lang, text
+      def call_translate_service(from_lang, to_lang, text)
         url = translate_url(from_lang, to_lang)
 
         response = call_service(url, normalize_to_translate(text))
@@ -36,13 +36,13 @@ module TranslatorSrt
         response.body.split(',').collect { |s| s == '' ? "\"\"" : s }.join(",") # fix json object
       end
 
-      def call_service url, q
+      def call_service(url, q)
         accessor = ResourceAccessor.new
 
         accessor.get_response url: url, :method => :post, :body => {q: q}
       end
 
-      def normalize_to_translate text
+      def normalize_to_translate(text)
         text.gsub(":", "#").gsub(",", "##").gsub("-->", "###")
       end
     end
