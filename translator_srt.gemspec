@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Vadim Poplavskiy']
   spec.email         = ['im@demetrodon.com']
   spec.summary       = %q{Translator srt files}
-  spec.description   = ''
+  spec.description   = 'This is a Ruby library for translate SRT (SubRip) files to other languages.'
   spec.homepage      = 'https://github.com/demetrodon/translator-srt'
   spec.license       = 'New BSD'
 
