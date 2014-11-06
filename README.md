@@ -9,6 +9,10 @@ Add this line to your application's Gemfile:
 
     gem 'translator-srt'
 
+Or add latest version from github:
+
+    gem 'translator-srt', git: 'https://github.com/demetrodon/translator-srt'
+
 And then execute:
 
     $ bundle
