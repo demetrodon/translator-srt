@@ -3,8 +3,8 @@
 [![Code Climate](https://codeclimate.com/github/mbj/mutant/badges/gpa.svg)](https://codeclimate.com/github/mbj/mutant)
 [![Gem Version](https://badge.fury.io/rb/translator-srt.svg)](http://badge.fury.io/rb/translator-srt)
 
-SRT stands for SubRip text file format, which is a file for storing subtitles; This is a Ruby library for translate SRT files to other languages.
-Current functionality includes **Google Translate** for translate your srt files.
+SRT stands for SubRip text file format, which is a file for storing subtitles; This is a Ruby library for translating SRT files to other languages.
+Current functionality includes **Google Translate** for translating your srt files.
 
 ## Installation
 
